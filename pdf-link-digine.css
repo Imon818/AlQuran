@@ -1,0 +1,100 @@
+body{
+    width:345px;
+    background-color:#FF80DA;
+ }
+a#pdf,#pdf-summary,#pdf-m,#pdf-k{
+    width:75px;
+    height:120px;
+    float:left;
+    line-height:26px;
+    border:2px solid #00ff00;
+    border-radius:25px;
+    padding-left:40px;
+    padding-right:41px;
+    padding-top:20px;
+    padding-bottom:40px;
+    margin-left:12px;
+    margin-right:0px;
+    margin-bottom:12px;
+    background-image:url('Qr.jpeg');
+    background-position:center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    color:#00FBFF;
+    text-decoration:blink;
+    font-size: 25px;
+    text-align:center;
+    transition:0.1s;
+ }
+ a#pdf-summary{
+     font-size:22px;
+     line-height:22px;
+     margin-left:12px;
+ }
+#pdf-m,#pdf-k{
+     width:75px;
+     height:100px;
+     padding-top:40px;
+ }
+ a#pdf:hover{
+     overflow:hidden;
+     border:2px solid #00fbff;
+     border-radius:0px;
+     color:#00ff00;
+     transition:0.1s;
+ }
+a#pdf-summary:hover{
+     overflow:hidden;
+     border:2px solid #00fbff;
+     border-radius:0px;
+     color:#00ff00;
+     transition:0.1s;
+ }
+a#pdf-m:hover{
+     overflow:hidden;
+     border:2px solid #00fbff;
+     border-radius:0px;
+     color:#00ff00;
+     transition:0.1s;
+ }
+a#pdf-k:hover{
+    overflow:hidden;
+    border:2px solid #00fbff;
+    border-radius:0px;
+    color:#00ff00;
+    transition:0.1s;
+ }
+div#back{
+	font-size:20px;
+	float:left;
+	margin-left:20px;
+	margin-top:60px;
+}
+a#back-l{
+	width:80px;
+    height:40px;
+    float:right;
+    border:2px solid #ff0000;
+    border-radius:2px;
+    margin-top:10px;
+	font-size:30px;
+	color:#ff0000;
+	text-align:center;
+	background-color:#00ff00;
+	text-decoration:blink;
+	transition:0.1s;
+ }
+a#back-l:hover{
+     border:2px solid #00ff00;
+     border-radius:25px;
+     color:#0000ff;
+     text-align:left;
+     background-color:#00fbff;
+     transition:0.1s;
+ }
+div#back-t{
+  font-size:25px;
+  float:left;
+  width:210px;
+  height:10px;
+ }
