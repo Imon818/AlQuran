@@ -3,7 +3,10 @@
 <head>
 <title>Home</title>
 <style type="text/css">
-body{width:345px;}
+body{width:345px;
+margin:auto;}
+.all-items{border:1px  white;
+	box-shadow:1px 1px 5px;}
 .my-addrass{position:fixed;
 	z-index:7;}
 #my-img{width:50px;
@@ -45,7 +48,6 @@ i{font-size:10px;
 	font-size:9px;
 	color:#ff0000;}
 .lback-btn{
-	//opacity:0;
 	text-align:center;
 	font-size:20px;
 	color:white;
@@ -60,14 +62,13 @@ i{font-size:10px;
 	cursor:pointer;}
 //.lback-btn:hover{opacity:1;}
 .rback-btn{
-	//opacity:0;
 	text-align:center;
 	font-size:20px;
 	color:white;
 	padding:4px 4px;
 	background-color:black;
 	margin-top:90px;
-	margin-left:326px;
+	margin-left:327px;
 	border:0px solid ;
 	border-radius:5px;
 	position:absolute;
@@ -84,10 +85,17 @@ i{font-size:10px;
     opacity:0;
     width:345px;
     height:200px;
-    transition:1s;}
+    transition:1s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;}
 .active{opacity:1;
-	transform:rotate(360deg);
 	transition:1s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 	}
 #coverpic{ width:345px;
            height:200px;}
@@ -129,7 +137,8 @@ section{ width:345px;}
    box-shadow:5px 3px 9px #00ff00;
    cursor:pointer;
    }
-b{ font-size:18px;
+b{ font-size:16px;
+   text-align:center;
    margin-bottom:10px;}
 div#slink{
    float:left;
@@ -149,6 +158,7 @@ p#details{ color:#000000;
 </style>
 </head>
 <body>
+ <div class="all-items">
   <header>
     <div class="my-addrass">
       <div id="my-img-container">
@@ -162,8 +172,8 @@ p#details{ color:#000000;
     </div>
     <div id="container">
       <div class="btn">
-        <input class="lback-btn" type="button" onclick="backChangeSlide()" value="<"/>   
-        <input class="rback-btn" type="button" onclick="changeSlide()" value=">"/>
+        <input class="lback-btn" type="button" onclick="backChangeSlide()" value="&#10094;"/>   
+        <input class="rback-btn" type="button" onclick="changeSlide()" value="&#10095;"/>
       </div>
       <div class="slider_container">
          <div class="sliderItems active"><img id="coverpic" src="Pic1.jpg" alt="frist pic"/></div>
@@ -257,9 +267,10 @@ p#details{ color:#000000;
   <footer>
     <div>
      <marquee id="p-marquee">
-       <p id="details">এটি আমার প্রথম তৈরি ওয়েবসাইট। এ ওয়েবসাইটের Tafseerul Quran ও Al Quran audio তে ক্লিক করে পুরো কুরআনের তাফসীর ও তেলাওয়াত পড়তে ও শোনতে পারবেন।</p>
+       <p id="details">এটি আমার প্রথম তৈরি ওয়েবসাইট। এ ওয়েবসাইটের Tafseerul Quran ও Al Quran audio তে ক্লিক করে পুরো কুরআনের তাফসীর ও তেলাওয়াত পড়তে ও শুনতে পারবেন।</p>
      </marquee>
     </div>
   </footer>
+ </div>
 </body>
 </html>
